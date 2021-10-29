@@ -126,6 +126,7 @@ TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/configs/config.fs
 
 #Manifest
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
+DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864

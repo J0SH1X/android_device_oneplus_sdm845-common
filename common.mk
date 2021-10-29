@@ -99,7 +99,6 @@ PRODUCT_PACKAGES += \
     libvolumelistener \
     tinymix \
     libtinycompress \
-    libtinycompress.vendor \
     OnePlusDiracGef
     
 PRODUCT_COPY_FILES += \
@@ -147,6 +146,7 @@ PRODUCT_PACKAGES += \
     libldacBT_dec \
     com.qualcomm.qti.bluetooth_audio@1.0.vendor \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
+    vendor.qti.hardware.bluetooth_audio@2.1.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor \
     vendor.qti.hardware.capabilityconfigstore@1.0.vendor
@@ -220,7 +220,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@1.1.vendor \
     vendor.qti.hardware.display.mapper@2.0.vendor \
     vendor.qti.hardware.display.mapper@3.0.vendor \
-    vendor.qti.hardware.display.mapper@4.0.vendor
+    vendor.qti.hardware.display.mapper@4.0.vendor \
+    vendor.oneplus.hardware.display@1.0.vendor
+    
 # Doze
 PRODUCT_PACKAGES += \
     OnePlusDoze
@@ -236,6 +238,7 @@ PRODUCT_PACKAGES += \
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl-qti \
+    android.hardware.health@2.1-impl \
     android.hardware.health@2.1-service
 
 # HIDL
@@ -344,6 +347,7 @@ PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     NfcNci \
     SecureElement \
+    libchrome.vendor \
     Tag \
     vendor.nxp.nxpnfc@1.0
 
@@ -517,8 +521,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libnl
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+#PRODUCT_BOOT_JARS += \
+#    WfdCommon
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-wfd.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-wfd.xml
+    
+    VENDOR_SECURITY_PATCH = 2021-10-01
