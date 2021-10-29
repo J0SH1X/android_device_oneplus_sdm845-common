@@ -74,22 +74,32 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AntHalService-Soong
 
-# Audio
+ #Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio.service \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio@2.0-service \
     android.hardware.audio@6.0-impl \
+    android.hardware.audio.common@2.0-util \
+    android.hardware.audio.common@6.0-util \
+    android.hardware.audio.effect@2.0-impl \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.soundtrigger@2.1-impl \
+    android.hardware.bluetooth.audio@2.0-impl \
     audio.a2dp.default \
+    audio.bluetooth.default \
     audio.r_submix.default \
     audio.usb.default \
-    libtinycompress \
     libaudio-resampler \
+    libaudioroute \
+    libhdmiedid \
+    libhfp \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libvolumelistener \
-    libstagefright_softomx \
+    tinymix \
+    libtinycompress \
+    libtinycompress.vendor \
     OnePlusDiracGef
     
 PRODUCT_COPY_FILES += \
@@ -325,15 +335,17 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.0:64 \
-    android.hardware.nfc@1.1:64 \
-    android.hardware.nfc@1.2:64 \
-    android.hardware.secure_element@1.0:64 \
+    android.hardware.nfc@1.0 \
+    android.hardware.nfc@1.1 \
+    android.hardware.nfc@1.2 \
+    android.hardware.nfc@1.2-service \
+    android.hardware.secure_element@1.0 \
+    android.hardware.secure_element@1.1 \
     com.android.nfc_extras \
+    NfcNci \
+    SecureElement \
     Tag \
-    libchrome.vendor \
-    vendor.nxp.nxpese@1.0:64 \
-    vendor.nxp.nxpnfc@1.0:64
+    vendor.nxp.nxpnfc@1.0
 
 # OnePlus
 PRODUCT_PACKAGES += \
@@ -369,6 +381,15 @@ PRODUCT_PACKAGES += \
     
 # Radio
 PRODUCT_PACKAGES += \
+    android.hardware.radio.config@1.0 \
+    android.hardware.radio.config@1.1 \
+    android.hardware.radio.config@1.2 \
+    android.hardware.radio@1.0 \
+    android.hardware.radio@1.1 \
+    android.hardware.radio@1.2 \
+    android.hardware.radio@1.3 \
+    android.hardware.radio@1.4 \
+    android.hardware.radio@1.5 \
     libjson \
     librmnetctl
     
