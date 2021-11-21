@@ -3,5 +3,6 @@ soong_namespace {
 	"hardware/qcom/bootctrl",
 	"hardware/google/pixel",
 	"hardware/google/interfaces",
+	"hardware/oneplus",
     ],
 }
