@@ -59,6 +59,9 @@ ro.telephony.default_network=22,22
 persist.vendor.qti.inputopts.enable=true
 persist.vendor.qti.inputopts.movetouchslop=0.6
 
+#Updater
+lineage.updater.uri=https://raw.githubusercontent.com/J0SH1X/Lineage-OTA/lineage-19.0/fajita.json
+
 # Netmgr
 persist.vendor.data.iwlan.enable=true
 persist.vendor.data.mode=concurrent
