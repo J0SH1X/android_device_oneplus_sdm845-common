@@ -284,6 +284,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.oneplus_sdm845
 
+# Livedisplay
+PRODUCT_PACKAGES += \
+    lineage.livedisplay@2.0-service.oneplus_sdm845
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0 \
@@ -531,7 +535,7 @@ PRODUCT_BOOT_JARS += \
 
 # tri-state-key
 PRODUCT_PACKAGES += \
-    tri-state-key_daemon.vendor
+    KeyHandler
 
 # Update engine
 PRODUCT_PACKAGES += \
