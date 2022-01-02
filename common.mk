@@ -286,7 +286,7 @@ PRODUCT_PACKAGES += \
 
 # Livedisplay
 PRODUCT_PACKAGES += \
-    lineage.livedisplay@2.0-service.oneplus_sdm845
+    vendor.lineage.livedisplay@2.0-service.oneplus_sdm845
 
 # Keymaster
 PRODUCT_PACKAGES += \
